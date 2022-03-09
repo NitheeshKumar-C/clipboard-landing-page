@@ -54,6 +54,12 @@
     
 }
 @media (max-width:750px){
+    .header-desktop-img{
+        display: none;
+    }
+    .header-mobile-img{
+        display:inline;
+    }
     .logo{
         width: 20%;
     }
@@ -76,6 +82,9 @@
     .features-items{
         margin:3% 0 0 0;
         text-align: center;
+    }
+    .download-div{
+        margin-top: 10%;
     }
     .download-div .row-download{
         width: 100%;
@@ -115,6 +124,7 @@
     }
     .social-media{
         text-align: center;
+        margin-top: 5%;
     }
 }
 @media (max-width:450px) {
