@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - [Solution](https://your-solution-url.com)
-- [Live Site](https://your-live-site-url.com)
+- [Live Site](https://nitheeshkumar-c.github.io/clipboard-landing-page/)
 
 ## My process
 
