@@ -1,0 +1,125 @@
+@media (min-width:1140px){
+    .head-intro{
+        max-width: 70%;
+    }
+    
+    .image-computer{
+        width: 100%;
+        position: relative;
+        right: 10%;
+    }
+    .row-download{
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    .download-div p{
+        padding: 0 30%;
+    }
+    .benifits-items p{
+        padding: 0 30%;
+    }
+    .tools-items{
+        padding: 0 5%;
+    }
+    .tools-items p{
+        padding: 2% 10%;
+    }
+    .download-div{
+        padding: 0 0;
+    }
+    .download-div .row-download{
+        width: 35%;
+    }
+    .main-heading{
+        margin: 3%;
+        font-size: 40px;
+    }
+    .main-para{
+        padding:0 15%;
+    }
+}
+@media (min-width: 750px) and (max-width: 1140px) {
+    
+    .row-download{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .download-div{
+        padding: 0 20%;
+    }
+    .download-div .row-download{
+        width: 100%;
+    }
+    
+}
+@media (max-width:750px){
+    .logo{
+        width: 20%;
+    }
+    .second-para{
+        padding:0 0;
+    }
+    .head-intro{
+        margin-top: 10%;
+    }
+    .download-div{
+        padding: 0 5%;
+    }
+    .row-download{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .benifits-items{
+        margin-top: 10%;
+    }
+    .features-items{
+        margin:3% 0 0 0;
+        text-align: center;
+    }
+    .download-div .row-download{
+        width: 100%;
+    }
+    .comp-img{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .image-computer{
+        width: 50%;
+        position: static;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .footer{
+        text-align: center;
+        margin: 10% 0 0 0;
+    }
+    .footer .row{
+        margin: 0;
+    }
+    .companies{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin: 5%;
+    }
+    .companies img{
+        display: inline-block;
+        width: 30%;
+        padding: 5% 0;
+    }
+    .f-items,.f-logo{
+        padding-bottom: 20px;
+    }
+    .social-media{
+        text-align: center;
+    }
+}
+@media (max-width:450px) {
+    .row-download{
+        width: 100%
+    }
+    
+}

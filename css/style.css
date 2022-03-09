@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    
+}
+main,section{
+    width: 100%;
+}
+h1,h2,h3,h4{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    margin: 0 0 2% 0;
+}
+/* head */
+p{
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.header-desktop-img{
+    width: 100%;
+    position: absolute;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7%;
+}
+.logo{
+    width: 10%;
+    margin-bottom: 3%;
+}
+.head-intro{
+    /* max-width: 60%; */
+    margin: 0 auto 0 auto;
+}
+.main-heading{
+    margin: 0 0 2% 0;
+}
+.main-para{
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+    
+}
+.row-download{
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+.download{
+    outline: none;
+    margin-top: 5%;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    
+    color: white;
+    font-weight: 600;
+    /* width: 40%; */
+}
+.ios,.mac{
+    cursor: pointer;
+}
+.ios{
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 2px solid hsl(171, 61%, 31%);
+    box-shadow: 0 2px 5px 0 hsl(171, 100%, 71%);
+}
+.mac{
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 2px solid hsl(233, 40%, 52%);
+    box-shadow: 0 2px 5px 0 hsl(233, 60%, 64%);
+}
+.second-heading{
+    margin:15% 3% 1% 3%;
+    color: hsl(210, 10%, 33%);
+}
+.second-para{
+    padding:0 20%;
+}
+
+/* features */
+.features{
+    width: 100%;
+    margin: 0;
+}
+/* .comp-img{
+    padding: 0;
+    margin: 0 auto;
+} */
+.image-computer{
+    width: 100%;
+    
+}
+
+.features-items h1{
+    margin-bottom: 2%;
+    color: hsl(210, 10%, 33%);
+}
+.features-items p{
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+
+/* benifits */
+.benifits{
+    text-align: center;
+    margin: 5% 0;
+    padding: 0 5%;
+}
+.benifits p{
+    padding: 0;
+}
+
+.devices{
+    margin-top: 0;
+    width: 65%;
+}
+
+.tools{
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    
+}
+
+.tools-items{
+    margin-top: 2%;
+}
+.tools-items img{
+    width: auto;
+    height: 30px;
+}
+.tools-items h3{
+    margin-top: 5%;
+}
+.tools-items p{
+    padding: 2% 0%;
+}
+
+/*  */
+.companies{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.companies img{
+    display: inline-block;
+    height: 15%;
+    width: auto;
+    padding: 30px;
+}
+/* download */
+.download-div{
+    text-align: center;
+    padding: 0 0;
+    margin:0 auto ;
+}
+.download-div h1{
+    margin-bottom: 15px;
+}
+.download-div p{
+    margin:0;
+}
+.download-div .row-download{
+    justify-content: space-between; 
+    
+    margin: 0 auto; 
+}
+
+
+.footer{
+    margin: 10% 0 0 0;
+    width: 100%;
+    margin-top: 5%;
+    padding: 5% 5% 2% 5%;
+    background-color: hsl(0, 0%, 95%);
+}
+.f-logo{
+    width: 50px;
+    margin: 10px 0;
+}
+.f-items{
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 40px;
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    cursor: pointer;
+    font-weight: 600;
+}
+.social-media{
+    text-align: center;
+}
+.social-media i{
+    font-size: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+    
+}
+
+
+.attribution{
+    font-weight: 600;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(205, 232, 255);
+    color: black;
+}
+
+/* hover */
+.ios:hover{
+    background-color: hsl(171, 56%, 70%) ;
+}
+.mac:hover{
+    background-color: hsl(233, 100%, 77%);
+}
+.f-items:hover ,.s-icons:hover{
+    color: hsl(171, 66%, 44%) ;
+}
