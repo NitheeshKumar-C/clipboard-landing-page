@@ -1,241 +1,233 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-size: 16px; */
+    font-family: 'Bai Jamjuree', sans-serif;
+    
 }
-body{
-    background: #fafafa;
-    height: 100%;
-    font-family: 'Rubik', sans-serif;
-}
-.top-bg{
-    background: linear-gradient(0deg, rgba(136,56,240,1) 20%, rgba(233,66,240,1) 100%);
-    height: 90%;
-    width: 25%;
-    border-bottom-left-radius: 180px;
-    border-bottom-right-radius: 180px;
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-.bottom-bg{
-    background: linear-gradient(0deg, rgb(191, 148, 247) 20%, rgb(254, 227, 255) 80%);
-    height: 80%;
-    width: 22%;
-    border-top-left-radius: 180px;
-    z-index: -1000;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    opacity: 0.1;
-}
-.content{
-    min-height: 100vh;
+main,section{
     width: 100%;
+}
+h1,h2,h3,h4{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    margin: 0 0 2% 0;
+}
+/* head */
+p{
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.header-desktop-img,.header-mobile-img{
+    width: 100%;
+    position: absolute;
+}
+.header-mobile-img{
+    display: none;
+}
+
+.header{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    text-align: center;
+    padding: 7%;
 }
-.mobile{
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 10% 0 15%;
-    margin-top: 5%;
-
-}
-.mobile-content{
-    /* justify-content: space-around; */
-    background-color: white;
-    justify-self: flex-start;
-    height: fit-content;
-    width: 17rem;
-    position: relative;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 10px 10px 10px 5px hsla(0, 0%, 0%, 0.055);
-}
-.mobile-content *{
-    font-size: 9px;
-}
-.mc{
-    height: 100%;
-    width: 100%;
-    background-color: hsl(270, 20%, 96%);
-    position: relative;
-    border-radius: 20px;
-    padding: 0 0 3% 0;
-    left: 0;
-    top: 0;
-}
-.mobile-head{
-    width: 100%;
-    background: linear-gradient(90deg, rgba(136,56,240,1) 0%, rgba(233,66,240,1) 100%);
-    position: relative;
-    border-radius: 20px 20px 5px 5px;
-    font-size: 15px;
-    
-}
-.mobile-head *{
-    font-size: 10px;
-}
-.notch{
-    width: 100px;
-    height: 15px;
-    border-radius: 0 0 15px 15px;
-    position: relative;
-    margin: 0 auto;
-    background-color: #fafafa;
-}
-.mh-content{
-    color: white;
-    display: flex;
-    padding: 4% 4%;
-}
-.mh-left{
-    display: flex;
-    align-items: center;
-    width: 90%;
-    position: relative;
-    height: 100%;
-    /* margin: 4% 0 0 0; */
-}
-.mh-left *{
-    padding-left: 3%;
-}
-.about *{
-    padding: 0;
-    margin: 0;
-    /* font-size: 12px; */
-}
-.name{
-    font-weight: 500;
-}
-.status{
-    color: hsla(0, 0%, 89%, 0.795);
-}
-.avatar{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid white;
-    margin-left: 5px;
-}
-.mh-right{
-    position: relative;
-    height: 100%;
-    margin: 4% 0 0 0;
-}
-/* mobile body */
-.mobile-body{
-    width: 100%;
-    position: relative;
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
-}
-.chat-left,.chat-left-duty{
-    
-    
-    margin: 0 0 3% 0;
-    border-radius: 10px 10px 10px 0;
-}
-.chat-left-duty{
-    width: 80%;
-    padding: 0.4rem;
-}
-.chat-left-duty .cld1{
-    width: 90%;
-    display: flex;
-    align-items: center;
-}
-.radio{
-    position: relative;
-    width: 15px;
-    height: 15px;
-    border: 1px solid white;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-.chat-left{
-    background-color: hsl(275, 100%, 94%);
-    width: 70%;
-    padding: 0.7rem;
-}
-.chat-left p{
-    /* font-size: 12px; */
-    color: hsl(276, 55%, 52%);
-    margin: 0;
-    
-}
-.chat-left-duty{
-    color: white;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(90deg, rgba(233,66,240,1)  0%, rgba(136,56,240,1) 100%);
-}
-.chat-right{
-    text-align: right;
-    width: 100%;
-}
-.chat-right p{
-    /* font-size: 12px; */
-    margin: 0;
-    
-}
-.chat-right .cr{
-    float: right;
-    width: fit-content;
-    background-color: white;
-    padding: 10px;
-    margin: 0 0 3% 0;
-    border-radius: 10px 10px 0 10px;
-    box-shadow: 10px 10px 10px 5px hsla(0, 0%, 0%, 0.055);
-
-    
-}
-.price{
-    margin-right: 10px;
-    font-weight: 700;
-}
-.imgies img{
-    width: 20%;
-    border-radius: 10px;
-    padding-right: 5px;
+.logo{
+    width: 10%;
     margin-bottom: 3%;
 }
-
-.mobile-footer{
+.head-intro{
+    /* max-width: 60%; */
+    margin: 0 auto 0 auto;
+}
+.main-heading{
+    margin: 0 0 2% 0;
+}
+.main-para{
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
     
-    width: 93%;
+}
+.row-download{
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+.download{
+    outline: none;
+    margin-top: 5%;
+    padding: 15px 30px;
+    border: none;
     border-radius: 30px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3% 5%;
-    margin: 0 auto;
-}
-.mobile-footer span{
-    font-size: 10px;
-    color: hsl(270, 7%, 64%);
-}
-.fa-angle-right{
-    background-color: black;
+    
     color: white;
-    padding: 10px 12px;
-    border-radius: 50%;
+    font-weight: 600;
+    /* width: 40%; */
 }
-.description h1{
-    color: hsl(271, 36%, 24%);
+.ios,.mac{
+    cursor: pointer;
 }
-.description p{
-    color: hsl(270, 7%, 64%);
+.ios{
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 2px solid hsl(171, 61%, 31%);
+    box-shadow: 0 2px 5px 0 hsl(171, 100%, 71%);
 }
+.mac{
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 2px solid hsl(233, 40%, 52%);
+    box-shadow: 0 2px 5px 0 hsl(233, 60%, 64%);
+}
+.second-heading{
+    margin:15% 3% 1% 3%;
+    color: hsl(210, 10%, 33%);
+}
+.second-para{
+    padding:0 20%;
+}
+
+/* features */
+.features{
+    width: 100%;
+    margin: 0;
+}
+/* .comp-img{
+    padding: 0;
+    margin: 0 auto;
+} */
+.image-computer{
+    width: 100%;
+    
+}
+
+.features-items h1{
+    margin-bottom: 2%;
+    color: hsl(210, 10%, 33%);
+}
+.features-items p{
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+
+/* benifits */
+.benifits{
+    text-align: center;
+    margin: 5% 0;
+    padding: 0 5%;
+}
+.benifits p{
+    padding: 0;
+}
+
+.devices{
+    margin-top: 0;
+    width: 65%;
+}
+
+.tools{
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    
+}
+
+.tools-items{
+    margin-top: 2%;
+}
+.tools-items img{
+    width: auto;
+    height: 30px;
+}
+.tools-items h3{
+    margin-top: 5%;
+}
+.tools-items p{
+    padding: 2% 0%;
+}
+
+/*  */
+.companies{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.companies img{
+    display: inline-block;
+    height: 15%;
+    width: auto;
+    padding: 30px;
+}
+/* download */
+.download-div{
+    text-align: center;
+    padding: 0 0;
+    margin:0 auto ;
+}
+.download-div h1{
+    margin-bottom: 15px;
+}
+.download-div p{
+    margin:0;
+}
+.download-div .row-download{
+    justify-content: space-between; 
+    
+    margin: 0 auto; 
+}
+
+
+.footer{
+    margin: 10% 0 0 0;
+    width: 100%;
+    margin-top: 5%;
+    padding: 5% 5% 2% 5%;
+    background-color: hsl(0, 0%, 95%);
+}
+.f-logo{
+    width: 50px;
+    margin: 10px 0;
+}
+.f-items{
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 40px;
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    cursor: pointer;
+    font-weight: 600;
+}
+.social-media{
+    text-align: center;
+}
+.social-media i{
+    font-size: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+    
+}
+
+
 .attribution{
-    margin: 5% 0 0 0;
+    font-weight: 600;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(205, 232, 255);
+    color: black;
+}
+
+/* hover */
+.ios:hover{
+    background-color: hsl(171, 56%, 70%) ;
+}
+.mac:hover{
+    background-color: hsl(233, 100%, 77%);
+}
+.f-items:hover ,.s-icons:hover{
+    color: hsl(171, 66%, 44%) ;
 }
